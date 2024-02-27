@@ -4,7 +4,6 @@ import { db } from "../firbase";
 
 import type { DocumentData, Query, Timestamp } from 'firebase/firestore';
 import { useAppSelector } from "@/lib/hooks";
-import { Messages } from "../components/chat/Chat";
 
 export interface Channel {
   id: string,
