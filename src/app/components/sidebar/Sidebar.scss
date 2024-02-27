@@ -1,0 +1,172 @@
+.sidebar {
+  display: flex;
+  flex: 0.35;
+  height: 100vh;
+
+  .sidebarLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: #1a1c20;
+    padding: 10px;
+  }
+
+  .serverIcon {
+    overflow: hidden;
+    display: grid;
+    place-content: center;
+    width: 55px;
+    height: 55px;
+    background-color: transparent;
+    border-radius: 9999px;
+    padding: 6px;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+
+  .sidebarLogout {
+    margin-top: auto;
+  }
+
+  .sidebarLogoutButton {
+    cursor: pointer;
+    color: #7b7c85;
+  }
+
+  .sidebarRight {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    width: 300px;
+    padding: 20px 0 0;
+    background-color: #2b2d33;
+  }
+
+  .sidebarTop {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  .sidebarTopTitle {
+    font-size: 20px;
+  }
+
+  .sidebarChannels {
+    position: relative;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 90px);
+    margin-top: 15px;
+  }
+
+  .sidebarChannelsHeader {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2b2d33;
+    padding: 0 20px;
+
+    > button {
+      color: #fff;
+    }
+  }
+
+  .sidebarHeader {
+    display: flex;
+    align-items: center;
+  }
+
+  .sidebarHeaderTitle {
+    font-size: 16px;
+  }
+
+  .sidebarAddIcon {
+    cursor: pointer;
+  }
+
+  .sidebarChannelList {
+    margin-top: 8px;
+  }
+
+  .sidebarFooter {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    margin: 0 auto;
+    padding: 10px 0;
+    border-top: 1px solid #686a6b;
+    font-size: 14px;
+    background-color: #2b2d33;
+    margin-top: auto;
+    padding: 0 20px;
+  }
+
+  .sidebarAccount {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .sidebarAccountIcon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 9999px;
+    background-color: #fff;
+  }
+
+  .sidebarAccountName {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    color: #fff;
+    word-break: break-all;
+    line-height: 1.1;
+  }
+
+  .sidebarAccountDisplayName {
+    overflow: hidden;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  .sidebarAccountId {
+    overflow: hidden;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    color: #686a6e;
+    word-break: break-all;
+    margin-top: 4px;
+    font-size: 11px;
+    line-height: 1.2;
+  }
+
+  .sidebarVoice {
+    display: flex;
+    align-items: center;
+    color: #686a6e;
+  }
+}

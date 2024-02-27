@@ -1,0 +1,32 @@
+.chatMessage {
+  display: flex;
+  padding: 0 15px;
+  color: #fff;
+  margin: 15px 0;
+
+  .chatMessageIcon {
+    width: 40px;
+    height: 40px;
+    border-radius: 9999px;
+  }
+
+  .chatMessageInfo {
+    padding: 0 20px 20px 10px;
+  }
+
+  .chatMessageUserName {
+    font-size: 14px;
+  }
+
+  .chatMessageTimestamp {
+    color: #7b7c85;
+    margin-left: 1em;
+  }
+
+  .chatMessageContent {
+    white-space: pre-wrap;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-top: 4px;
+  }
+}
